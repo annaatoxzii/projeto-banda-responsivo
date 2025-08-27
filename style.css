@@ -4,15 +4,21 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header {
     padding: 0.2rem;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 17, 50);
+    background-color: rgb(0, 10, 31);
     align-items: center;
 
     img {
         height: 4.5rem;
+        margin-left: 1rem;
     }
 }
 
@@ -23,11 +29,14 @@ nav {
     gap: 30px;
     color: white;
     display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     a {
         color: white;
         text-decoration: none;
+        padding: 2rem;
     }
+
 }
 
 .foto {
@@ -41,8 +50,9 @@ nav {
 }
 
 .texto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    background-color: rgba(0, 27, 81, 0.766);
+    background-color: rgba(0, 23, 69, 0.766);
     width: 60rem;
     text-align: center;
     display: flex;
@@ -54,6 +64,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem;
+    border-radius: 10px;
 
     h4 {
         font-size: 1.6rem;
@@ -63,3 +74,121 @@ nav {
         font-size: 1.2rem;
     }
 }
+
+.mem {
+    font-size: 2rem;
+    padding: 3rem;
+    color: rgb(0, 8, 60);
+    text-align: center;
+}
+
+.membros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+
+.membros1 {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(1, 0, 45);
+}
+
+.membro {
+
+    h2 {
+        color: rgb(0, 47, 141);
+        font-size: 25px;
+        padding: 2px;
+    }
+
+    h4 {
+        color: rgb(0, 60, 181);
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.foto1 {
+    background-image: url(fotos/chorao.jpg);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.foto2 {
+    background-image: url(fotos/champi.jpg);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.foto3 {
+    background-image: url(fotos/thiago.jpg);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.foto4 {
+    background-image: url(fotos/marcão.webp);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foto5 {
+    background-image: url(fotos/renato.webp);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.foto6 {
+    background-image: url(fotos/heitor.jpg);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foto7 {
+    background-image: url(fotos/bruno.jpg);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
