@@ -192,3 +192,46 @@ nav {
     background-repeat: no-repeat;
 }
 
+.tempos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.História {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(1, 0, 45);
+
+}
+
+.tempo {
+    background-color: rgba(221, 221, 221, 0.462);
+    border-left: solid black 0.2rem;
+    width: 21.6rem;
+    min-height: 9rem;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    h3 {
+        font-size: 20px;
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        padding: 0.5rem;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+}
