@@ -13,7 +13,7 @@ header {
     padding: 0.2rem;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 10, 31);
+    background-color: rgb(0, 0, 0);
     align-items: center;
 
     img {
@@ -40,7 +40,7 @@ nav {
 }
 
 .foto {
-    background-image: url(fotos/wll.jpg);
+    background-image: url(fotos/pcc.jpg);
     width: 100%;
     height: 700px;
     object-fit: cover;
@@ -52,7 +52,7 @@ nav {
 .texto {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    background-color: rgba(0, 23, 69, 0.766);
+    background-color: rgba(0, 0, 0, 0.766);
     width: 60rem;
     text-align: center;
     display: flex;
@@ -78,7 +78,7 @@ nav {
 .mem {
     font-size: 2rem;
     padding: 3rem;
-    color: rgb(0, 8, 60);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -100,19 +100,26 @@ nav {
     flex-direction: column;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(1, 0, 45);
+    background-color: rgb(0, 0, 0);
 }
 
 .membro {
+    width: 100%;
+    text-align: center;
+    img {
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+    }
 
     h2 {
-        color: rgb(0, 47, 141);
+        color: rgb(0, 0, 0);
         font-size: 25px;
         padding: 2px;
     }
 
     h4 {
-        color: rgb(0, 60, 181);
+        color: rgb(0, 0, 0);
         font-size: 18px;
         margin-bottom: 4px;
     }
@@ -120,76 +127,6 @@ nav {
     p {
         color: rgb(0, 0, 0);
     }
-}
-
-.foto1 {
-    background-image: url(fotos/chorao.jpg);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-.foto2 {
-    background-image: url(fotos/champi.jpg);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-
-.foto3 {
-    background-image: url(fotos/thiago.jpg);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: top left;
-    background-repeat: no-repeat;
-}
-
-.foto4 {
-    background-image: url(fotos/marcão.webp);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.foto5 {
-    background-image: url(fotos/renato.webp);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
-.foto6 {
-    background-image: url(fotos/heitor.jpg);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.foto7 {
-    background-image: url(fotos/bruno.jpg);
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 .tempos {
@@ -233,5 +170,52 @@ nav {
         padding: 0.5rem;
         font-size: 16px;
         margin-bottom: 1rem;
+    }
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.Albuns {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(1, 0, 45);
+
+}
+.all {
+    width: 100%;
+    text-align: left;
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        padding: 2px;
+    }
+
+    h4 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
     }
 }
