@@ -9,6 +9,15 @@ html {
     background-color: #dadada9c;
 }
 
+section {
+    scroll-margin-top: 5rem;
+
+    @media(max-width: 900px) {
+        scroll-margin-top: 8rem;
+    }
+
+}
+
 
 header {
     padding: 0.2rem;
@@ -16,6 +25,16 @@ header {
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.965);
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    top: 0;
+    left: 0;
+
+    @media(max-width:900px) {
+        flex-direction: column;
+    }
 
     img {
         height: 4.5rem;
@@ -30,21 +49,22 @@ nav {
     gap: 30px;
     color: white;
     display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     a {
         color: white;
         text-decoration: none;
         padding: 2rem;
 
+        @media(max-width:700px) {
+            padding: 2rem 0.5rem;
+        }
+
         &:hover {
             text-decoration: underline;
 
         }
     }
-
-
-
 }
 
 .foto {
@@ -55,10 +75,16 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 5rem;
+    position: relative;
+
+    @media(max-width: 890px) {
+        height: 500px;
+    }
 }
 
 .texto {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.766);
     width: 60rem;
@@ -69,23 +95,45 @@ nav {
     align-items: center;
     position: absolute;
     left: 20%;
-    bottom: 0;
+    bottom: 1rem;
     padding: 1rem;
     border-radius: 10px;
     transition: transform 0.3s ease;
 
     h4 {
         font-size: 1.6rem;
+
+        @media(max-width: 1250px) {
+            font-size: 1.5rem;
+        }
+
+        @media(max-width: 950px) {
+            font-size: 1.4rem;
+        }
     }
 
     p {
         font-size: 1.2rem;
+
+        @media(max-width: 1250px) {
+            font-size: 1.1rem;
+        }
+
+        @media(max-width: 950px) {
+            font-size: 1rem;
+        }
     }
-    
+
     &:hover {
         transform: scale(1.03);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.57);
         transition: transform 0.2s ease;
+    }
+
+    @media(max-width: 1400px) {
+        width: auto;
+        left: 0;
+        margin: 2rem;
     }
 }
 
@@ -94,6 +142,7 @@ nav {
     padding: 3rem;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .membros1,
@@ -104,27 +153,6 @@ nav {
     justify-items: center;
 }
 
-.membros {
-    padding: 2rem 0;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(0, 0, 0);
-
-}
-
-.membros2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-    max-width: 1050px;
-    margin: 0 auto;
-    justify-items: center;
-    margin-top: 2rem;
-}
 
 .membros1 {
     display: grid;
@@ -133,6 +161,20 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
     justify-items: center;
+
+    @media(max-width: 1450px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+    }
+
+    @media(max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .membro {
@@ -146,6 +188,7 @@ nav {
     color: #eee;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     &:hover {
         transform: translateY(-5px);
@@ -186,6 +229,7 @@ nav {
         font-size: 0.95rem;
         line-height: 1.4;
         color: #ddd;
+
     }
 }
 
@@ -198,6 +242,20 @@ nav {
     margin: 0 auto;
     justify-items: center;
     align-items: center;
+
+    @media (max-width:1400px) {
+        width: 100%;
+        padding: 24px;
+    }
+
+    @media (max-width:1050px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width:850px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
@@ -215,10 +273,10 @@ nav {
 .tempo {
     background-color: rgba(197, 196, 196, 0.462);
     border-left: solid black 0.2rem;
-    width: 21.6rem;
+    width: 100%;
     min-height: 9rem;
     text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     h3 {
         font-size: 20px;
@@ -229,7 +287,7 @@ nav {
     p {
         color: rgb(0, 0, 0);
         padding: 0.5rem;
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 1rem;
     }
 
@@ -251,11 +309,21 @@ nav {
 
 .album {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     max-width: 1300px;
+    padding: 24px;
     margin: 0 auto;
     align-items: center;
+
+    @media(max-width: 1050px) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 12px;
+        width: 90%;
+    }
+
+
 }
 
 .all {
@@ -264,8 +332,10 @@ nav {
     padding: 1rem;
     background: #111;
     border: 1px solid #444;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
 
     img {
         width: 140px;
@@ -276,13 +346,17 @@ nav {
 
     h2 {
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-bottom: 0.4rem;
+
+        @media(max-width: 660px) {
+            font-size: 1rem;
+        }
     }
 
     h3 {
         color: #ccc;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 0.6rem;
         font-style: italic;
     }
@@ -299,6 +373,10 @@ nav {
         margin-bottom: 0.4rem;
         color: #eee;
         font-size: 0.95rem;
+
+        @media(max-width: 660px) {
+            font-size: 0.75rem;
+        }
     }
 
     li::before {
@@ -323,11 +401,11 @@ nav {
 
 footer {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     background-color: #000000;
     margin-top: 2rem;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     text-align: center;
     display: flex;
@@ -335,8 +413,37 @@ footer {
     padding: 1rem;
     gap: 8px;
 
+    @media (max-width: 550px) {
+        height: 8rem;
+    }
+
     a {
         color: white;
         text-decoration: none;
+        padding: 5px;
+    }
+
+    .insta {
+        &:hover {
+            color: rgb(230, 0, 149);
+        }
+    }
+
+    .spot {
+        &:hover {
+            color: rgb(26, 153, 0);
+        }
+    }
+
+    .tw {
+        &:hover {
+            color: rgb(0, 142, 230);
+        }
+    }
+
+    .you {
+        &:hover {
+            color: rgb(201, 2, 2);
+        }
     }
 }
